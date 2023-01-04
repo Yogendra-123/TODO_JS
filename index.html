@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <title>TO DO APP JS</title>
+</head>
+<body>
+    <div id="main-container">
+        <div class="flex-container">
+            <div class="flex-item-1"><b>Tasks </b>List
+            </div>
+            <div class="flex-item-2">
+                <i id="plus-icon" onclick="popupopen()" class="fa-solid fa-circle-plus"></i>
+                <span onclick="popupopen()">Add Item</span>
+            </div>
+        </div>
+        <p id="my-para">No Item in the todo List</p>
+
+        <div id="adding-list">
+
+            <!-- <div class="para-list">
+                <h1 id="adding-item">${inputvalue}</h1>
+                 <hr>
+                
+              </div>
+              <div class="delete-add">
+               <i id="delete-icon" class="fa-solid fa-trash-can"></i>
+               <i id="below-plus-icon" class="fa-solid fa-circle-plus"></i>
+              </div> -->
+         
+        </div>
+
+
+    </div>
+
+    <div id="pop-up">
+        <h3 id="add-new-task">Add New List</h3>
+
+        <input id="input-box" type="text" placeholder="Add New Task">
+        <br><br>
+        <div class="btn-div">
+            <button id="add" onclick="addcard()" type="submit">Add</button>
+            <button id="close" onclick="popupclose()" type="reset">Close</button>
+        </div>
+    </div>
+
+    <div id="pop-up-add-2">
+        <h3 id="add-new-task-2">Add New Item</h3>
+
+        <input id="input-box-2" type="text" placeholder="Add New Item">
+        <br><br>
+        <div class="btn-div-2">
+            <button id="add-2" type="submit">Add</button>
+            <button id="close-2" type="reset">Close</button>
+        </div>
+    </div>
+
+    <script src="./main.js"></script>
+</body>
+</html>
